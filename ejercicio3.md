@@ -1,4 +1,4 @@
-## Ejercicio 3 - Instalacion y configuracion de wordpress
+# Ejercicio 3 - Instalacion y configuracion de wordpress
 
 - Para comenzar, deberemos irnos a la pagina oficial de wordpress en ubuntu y descargarlo
 - [Link a Wordpress](https://wordpress.org)
