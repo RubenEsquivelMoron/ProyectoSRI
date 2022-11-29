@@ -126,11 +126,10 @@ sudo nano index.html
 
 - Y podemos ver que todo funciona correctamente
 
-### centro.intranet
-
+#### centro.intranet
 ![](https://github.com/RubenEsquivelMoron/ProyectoSRI/blob/d4d3dc9941596947351745e6afca8068433324a7/Capturas/ejercicio%201/12.png)
 
-### departamentos.centro.intranet
+#### departamentos.centro.intranet
 ![](https://github.com/RubenEsquivelMoron/ProyectoSRI/blob/d4d3dc9941596947351745e6afca8068433324a7/Capturas/ejercicio%201/11.png)
 
 ## Ejercicio 2 - Activacion de modulos para php y mysql
