@@ -1,4 +1,4 @@
-## Ejercicio 1 - Instalacion de apache con dominios
+# Ejercicio 1 - Instalacion de apache con dominios
 
 - Para comenzar actualizaremos los repositorios de Linux con el comando:
 
