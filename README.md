@@ -5,7 +5,7 @@ Vamos a instalar un servidor web interno para un instituto. Se Pide:
 
 1. Instalación del servidor web apache. Usaremos dos dominios mediante el archivo hosts: centro.intranet y departamentos.centro.intranet. El primero servirá el contenido mediante wordpress y el segundo una aplicación en python [Ver aqui](https://github.com/RubenEsquivelMoron/ProyectoSRI/blob/ed9329b656f2f69fd77c6ad01eb4d73720fda11d/ejercicio1.md)
 
-2. Activar los módulos necesarios para ejecutar php y acceder a mysql [ver aqui]https://github.com/RubenEsquivelMoron/ProyectoSRI/blob/fcadb34add66a76b7dd950fd259c24c1d596911a/ejercicio2.md
+2. Activar los módulos necesarios para ejecutar php y acceder a mysql [Ver aqui](https://github.com/RubenEsquivelMoron/ProyectoSRI/blob/fcadb34add66a76b7dd950fd259c24c1d596911a/ejercicio2.md)
 
 3. Instala y configura wordpress
 
