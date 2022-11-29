@@ -1,6 +1,6 @@
-[Volver](https://github.com/RubenEsquivelMoron/ProyectoSRI/blob/7e66498129283427178ea365e2d7c50528d52644/README.md)
+### [Volver](https://github.com/RubenEsquivelMoron/ProyectoSRI/blob/7e66498129283427178ea365e2d7c50528d52644/README.md)
 
-# Ejercicio 1 - Instalacion de apache con dominios
+## Ejercicio 1 - Instalacion de apache con dominios
 
 - Para comenzar actualizaremos los repositorios de Linux con el comando:
 
@@ -132,5 +132,5 @@ sudo nano index.html
 
 ## departamentos.centro.intranet
 ![](https://github.com/RubenEsquivelMoron/ProyectoSRI/blob/d4d3dc9941596947351745e6afca8068433324a7/Capturas/ejercicio%201/11.png)
-
-[Volver](https://github.com/RubenEsquivelMoron/ProyectoSRI/blob/7e66498129283427178ea365e2d7c50528d52644/README.md)
+-------------------------------
+### [Volver](https://github.com/RubenEsquivelMoron/ProyectoSRI/blob/7e66498129283427178ea365e2d7c50528d52644/README.md)
