@@ -256,3 +256,90 @@ sudo service apache2 restart
 
 ![](https://github.com/RubenEsquivelMoron/ProyectoSRI/blob/ccad5f28af34f71133e6ce80502d99ace3df9e24/Capturas/Ejercicio%203/14.png)
 
+## Ejercicio 4 - Instalacion de modulo WSGI
+
+- Escribiremos 
+
+```bash
+sudo apt-get install libapache2-mod-wsgi
+```
+
+## Ejercicio 5 - Creación y desplegue de app python web
+
+- Crearemos la carpeta departamentos.centro.intranet dentro del directorio html en
+
+```bash
+cd /var/www/html/
+sudo mkdir departamentos.centro.intranet
+```
+
+- Al crearla deberemos crear 2 capetas mas dentro de ella, mypythonapp y public_html
+
+```bash
+cd /var/www/html/departamentos.centro.intranet
+sudo mkdir mypythonapp
+sudo mkdir public_html
+```
+
+-  Crearemos un archivo python controlador dentro de la carpeta mypythonapp
+
+```bash
+cd /var/www/html/departamentos.centro.intranet/mypythonapp
+sudo nano controller.py
+```
+
+- Escribiremos lo siguiente
+
+```python
+# -*- conding: utf-8 -*-
+
+def application(environ, start_response):
+    # Genero la salida HTML a mostrar al usuario
+    output = "<p>Bienvenido a mi <b>PythonApp</b>!!!</p>"
+    # Inicio una respuesta al navegador
+    start_response('200 OK', [('Content-Type', 'text/html; charset=utf-8')])
+    # Retorno el contenido HTML
+    return output
+```
+- Seguidamente, crearemos el archivo de virtual host en el directorio "sites-available"
+
+```bash
+cd /etc/apache2/sites-available
+sudo nano departamentos.centro.intranet.conf
+```
+
+- Dentro escribiremos lo siguiente
+
+```bash
+<VirtualHost *:80>
+    ServerName departamentos.centro.intranet
+
+    DocumentRoot /var/www/html/departamentos.centro.intranet/public_html
+    WSGIScriptAlias / /var/www/html/departamentos.centro.intranet/mypythonapp/controller.py
+
+</VirtualHost>
+```
+
+- Guardamos el archivo y habilitaremos el virtual host con el siguiente comando
+
+```bash
+sudo a2ensite departamentos.centro.intranet.conf
+Site departamentos.centro.intranet already enabled
+```
+
+- Reiniciamos el servicio de apache
+
+```bash
+sudo service apache2 restart
+```
+
+- Y probaremos a entrar a la web con la url
+
+```
+http://departamentos.centro.intranet
+```
+
+- Resultado
+
+//Imagen//
+
