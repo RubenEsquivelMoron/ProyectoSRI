@@ -65,31 +65,31 @@ sudo service apache2 restart
 ### Configuracion de Wordpress en  web
 
 - Ingresaremos en el navegador para acceder el siguiente link
-[http://centro.intranet](http://centro.intranet)
+- [http://centro.intranet](http://centro.intranet)
 
 
-- Podremos visualizar la pagina de configuracion de wordpress qie comenzará con la seleccion del idioma
+- Podremos visualizar la pagina de configuracion de wordpress que comenzará con la seleccion del idioma
 
-//imagen//
+![](https://github.com/RubenEsquivelMoron/ProyectoSRI/blob/ccad5f28af34f71133e6ce80502d99ace3df9e24/Capturas/Ejercicio%203/9.png)
 
 - Seguidamente, escribiremos algunos credenciales
 
-//imagen//
+![](https://github.com/RubenEsquivelMoron/ProyectoSRI/blob/ccad5f28af34f71133e6ce80502d99ace3df9e24/Capturas/Ejercicio%203/10.png)
 
 - Continuaremos con el proceso escribiendo el usuario y contraseña entre otras credenciaes finales
 
-//imagen//
+![](https://github.com/RubenEsquivelMoron/ProyectoSRI/blob/ccad5f28af34f71133e6ce80502d99ace3df9e24/Capturas/Ejercicio%203/11.png)
 
 - Acabaremos la configuracion de Wordpress
 
-//imagen//
+![](https://github.com/RubenEsquivelMoron/ProyectoSRI/blob/ccad5f28af34f71133e6ce80502d99ace3df9e24/Capturas/Ejercicio%203/12.png)
 
 - Por ultimo, para ingresar a wordpress, deberemos escribir la siguiente url
-[http://centro.intranet/wp-login.php](http://centro.intranet/wp-login.php)
+- [http://centro.intranet/wp-login.php](http://centro.intranet/wp-login.php)
 
 
-//imagen//
+![](https://github.com/RubenEsquivelMoron/ProyectoSRI/blob/ccad5f28af34f71133e6ce80502d99ace3df9e24/Capturas/Ejercicio%203/13.png)
 
 - Y ya estaremos dentro de Wordpress
 
-//Imagen//
+![](https://github.com/RubenEsquivelMoron/ProyectoSRI/blob/ccad5f28af34f71133e6ce80502d99ace3df9e24/Capturas/Ejercicio%203/14.png)
