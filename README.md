@@ -341,5 +341,5 @@ http://departamentos.centro.intranet
 
 - Resultado
 
-![]https://github.com/RubenEsquivelMoron/ProyectoSRI/blob/0898e23f12ca632f27cd34060cf776bba073c310/Capturas/Ejercicio%205/4.png
+![](https://github.com/RubenEsquivelMoron/ProyectoSRI/blob/0898e23f12ca632f27cd34060cf776bba073c310/Capturas/Ejercicio%205/4.png)
 
