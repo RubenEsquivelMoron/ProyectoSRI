@@ -128,6 +128,6 @@ sudo nano index.html
 
 ![](https://github.com/RubenEsquivelMoron/ProyectoSRI/blob/d4d3dc9941596947351745e6afca8068433324a7/Capturas/ejercicio%201/12.png)
 
-## departamentos.centro.intranet
+### departamentos.centro.intranet
 ![](https://github.com/RubenEsquivelMoron/ProyectoSRI/blob/d4d3dc9941596947351745e6afca8068433324a7/Capturas/ejercicio%201/11.png)
 
