@@ -7,7 +7,7 @@ Vamos a instalar un servidor web interno para un instituto. Se Pide:
 
 2. Activar los módulos necesarios para ejecutar php y acceder a mysql [Ver aqui](https://github.com/RubenEsquivelMoron/ProyectoSRI/blob/fcadb34add66a76b7dd950fd259c24c1d596911a/ejercicio2.md)
 
-3. Instala y configura wordpress [Ver aqui](https://github.com/RubenEsquivelMoron/ProyectoSRI/blob/fcadb34add66a76b7dd950fd259c24c1d596911a/ejercicio3.md)
+3. Instala y configura wordpress [Ver aqui](https://github.com/RubenEsquivelMoron/ProyectoSRI/blob/08ada4b4f629b65f8a2edc7030ef5b76586ccea8/ejercicio3.md)
 
 4. Activar el módulo “wsgi” para permitir la ejecución de aplicaciones Python
 
