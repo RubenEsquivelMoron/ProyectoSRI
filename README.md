@@ -464,3 +464,62 @@ http://192.168.73.45/cgi-bin/awstats.pl?config=departamentos.centro.intranet
 
 ![](https://github.com/RubenEsquivelMoron/ProyectoSRI/blob/a72b7dab2656925709630eb3dad61fec3787a108/Capturas/Ejercicio%207/2.png)
 
+## Ejercicio 8 - Instalacion de servidor Nginx
+
+- Comenzaremos actualizando los repositorios de linux e instalando Nginx
+
+```bash
+sudo apt update
+sudo apt install nginx
+```
+
+- Ahora, ajustaremos el software de firewall para permitir el acceso al servicio.
+
+```bash
+sudo ufw app list
+```
+
+- Devuelve
+
+```
+Available applications:
+  Nginx Full
+  Nginx HTTP
+  Nginx HTTPS
+  OpenSSH
+```
+
+- Seguidamente, habilitaremos el servicio de Nginx HTTP
+
+```bash
+sudo ufw allow 'Nginx HTTP'
+```
+
+- Y ya tendremos el servidor activo, pero para poder visualizarlo correctamente, deberemos cambiar el puerto del servidor
+
+```bash
+sudo nano /etc/nginx/sites-available/default
+```
+
+- Deberemos cambiar el puerto en la siguiente linea mostrada en pantalla
+
+```bash
+server {
+        listen 8050 default_server;
+        listen [::]:80 default_server;}
+```
+
+//Imagen//
+
+- Guardaremos el archivo y reiniciaremos el servicio de nginx
+
+```bash
+sudo service nginx restart
+```
+
+- Y ya podremos visualizar la pagina web default de nginx
+
+//Imagen//
+
+
+
