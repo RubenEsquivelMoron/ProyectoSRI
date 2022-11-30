@@ -33,7 +33,7 @@ ls
 centro.intranet departamentos.centro.intranet html
 ```
 
-- Tras crear las carpetas para los dominios, configuraremos el archivo hosts para indicarselo a apache
+- Tras crear las carpetas para los dominios, configuraremos el archivo `hosts` para indicarselo a apache
 
 ```bash
 cd /etc
@@ -47,7 +47,7 @@ sudo nano hosts
 127.0.0.3        departamentos.centro.intranet
 ```
 
-- Asignaremos la propiedad del directorio con la variable de entorno $USER que hará referencia al directorio actual
+- Asignaremos la propiedad del directorio con la variable de entorno `$USER` que hará referencia al directorio actual
 - Lo haremos con los dos dominios
 
 ```bash
@@ -55,7 +55,7 @@ sudo chown -R $USER:$USER /var/www/centro.intranet
 sudo chown -R $USER:$USER /var/www/departamentos.centro.intranet
 ```
 
-- Crearemos un archivo .conf donde le diremos al servidor que abra centro.intranet usando /var/www/centro.intranet
+- Crearemos un archivo `.conf` donde le diremos al servidor que abra centro.intranet usando `/var/www/centro.intranet`
 - De nuevo, haremos esto con los dos dominios
 
 ```bash
@@ -76,14 +76,14 @@ sudo nano /etc/apache2/sites-available/departamentos.centro.intranet.conf
 </VirtualHost>
 ```
 
-- Seguidamente habilitaremos los virtualhost que hemos creado
+- Seguidamente `habilitaremos` los virtualhost que hemos creado
 
 ```bash
 sudo a2ensite centro.intranet
 sudo a2ensite departamentos.centro.intranet
 ```
 
-- Puede venir bien deshabilitar el sitio web predeterminado que viene instalado con apache
+- Puede venir bien `deshabilitar` el sitio web predeterminado que viene instalado con apache
 
 ```bash
 sudo a2dissite 000-default
@@ -95,7 +95,7 @@ sudo a2dissite 000-default
 sudo apache2ctl configtest
 ```
 
-- Si no hay ningun error nos devolverá: Syntax OK
+- Si no hay ningun error nos devolverá: `Syntax OK`
 
 - Ahora, reiniciaremos el servicio de apache
 
@@ -104,7 +104,7 @@ sudo service apache2 restart
 ```
 ### Comprobaciones
 
-- Para comprobar que todo funciona correctamente, crearemos  un index.html en /var/www/tu_dominio para la ver si podemos visualizar la pagina correctamente
+- Para comprobar que todo funciona correctamente, crearemos  un `index.html` en `/var/www/tu_dominio` para la ver si podemos visualizar la pagina correctamente
 ```bash
 cd /var/www/centro.intranet
 sudo nano index.html
@@ -139,7 +139,7 @@ sudo nano index.html
 sudo apt-get install php
 ```
 
-- Seguidamente, instalaremos mysql server
+- Seguidamente, instalaremos `mysql server`
 ```bash
 sudo apt-get install mysql-server
 ```
@@ -150,7 +150,7 @@ sudo mysql
 ```
 ![](https://github.com/RubenEsquivelMoron/ProyectoSRI/blob/32ef4e2c532aa524345eb31debf709a2028215fa/Capturas/Ejercicio%202/3.png)
 
-- Ahora, terminaremos de instalar php con el siguiente comando
+- Ahora, terminaremos de instalar `php` con el siguiente comando
 ```bash
 sudo apt-get install php libapache2-mod-php php-mysql
 ```
@@ -165,7 +165,7 @@ php -v
 - Para comenzar, deberemos irnos a la pagina oficial de wordpress en ubuntu y descargarlo
 - [Link a Wordpress](https://wordpress.org)
 
-- Al descargarlo deberemos enviarlo a la carpeta de departamentos.centro.intranet, situada en el /var/www
+- Al descargarlo deberemos enviarlo a la carpeta de `departamentos.centro.intranet`, situada en el `/var/www`
 
 ```bash
 cp  -r /home/administrador/Escritorio/wordpress /var/www/centro.intranet/
@@ -176,20 +176,20 @@ cp  -r /home/administrador/Escritorio/wordpress /var/www/centro.intranet/
 ```bash
 unzip nombre_wordpress.zip
 ```
-- Moveremos el interior de la carpeta que obtengamos a /var/www/centro.intranet/
+- Moveremos el interior de la carpeta que obtengamos a `/var/www/centro.intranet/`
 ```bash
 cd /var/www/centro.intranet 
 mv wordpress/* .
 ```
 
-- Seguidamente, borraremos el fichero comprimido y la carpeta de instalacion
+- Seguidamente, `borraremos` el fichero comprimido y la carpeta de instalacion
 
 ```bash
 rm archivo_wordpress.zip
 rmdir carpeta_wordpress
 ```
 
-- Daremos los permisos del usuario www, el cual pertenece a apache
+- Daremos los permisos del usuario www, el cual pertenece a `apache`
 
 ```bash
 cd /var/www/departamentos.centro.intranet
@@ -219,7 +219,7 @@ grant all on wordpress.* to 'wordpressuser'@'localhost' identified by 'wordpress
 exit;
 ```
 
-- Seguidamente, reiniciaremos apache
+- Seguidamente, `reiniciaremos` apache
 ```bash
 sudo service apache2 restart
 ```
@@ -247,7 +247,7 @@ sudo service apache2 restart
 ![](https://github.com/RubenEsquivelMoron/ProyectoSRI/blob/ccad5f28af34f71133e6ce80502d99ace3df9e24/Capturas/Ejercicio%203/12.png)
 
 - Por ultimo, para ingresar a wordpress, deberemos escribir la siguiente url
-- [http://centro.intranet/wp-login.php](http://centro.intranet/wp-login.php)
+- `[http://centro.intranet/wp-login.php](http://centro.intranet/wp-login.php)`
 
 
 ![](https://github.com/RubenEsquivelMoron/ProyectoSRI/blob/ccad5f28af34f71133e6ce80502d99ace3df9e24/Capturas/Ejercicio%203/13.png)
@@ -266,14 +266,14 @@ sudo apt-get install libapache2-mod-wsgi
 
 ## Ejercicio 5 - Creación y desplegue de app python web
 
-- Crearemos la carpeta departamentos.centro.intranet dentro del directorio html en
+- Crearemos la carpeta `departamentos.centro.intranet` dentro del directorio `html` en
 
 ```bash
 cd /var/www/html/
 sudo mkdir departamentos.centro.intranet
 ```
 
-- Al crearla deberemos crear 2 capetas mas dentro de ella, mypythonapp y public_html
+- Al crearla deberemos crear 2 capetas mas dentro de ella, `mypythonapp` y `public_html`
 
 ```bash
 cd /var/www/html/departamentos.centro.intranet
@@ -281,7 +281,7 @@ sudo mkdir mypythonapp
 sudo mkdir public_html
 ```
 
--  Crearemos un archivo python controlador dentro de la carpeta mypythonapp
+- Crearemos un archivo python controlador dentro de la carpeta mypythonapp
 
 ```bash
 cd /var/www/html/departamentos.centro.intranet/mypythonapp
@@ -301,7 +301,7 @@ def application(environ, start_response):
     # Retorno el contenido HTML
     return output
 ```
-- Seguidamente, crearemos el archivo de virtual host en el directorio "sites-available"
+- Seguidamente, crearemos el archivo de virtual host en el directorio `sites-available`
 
 ```bash
 cd /etc/apache2/sites-available
@@ -320,7 +320,7 @@ sudo nano departamentos.centro.intranet.conf
 </VirtualHost>
 ```
 
-- Guardamos el archivo y habilitaremos el virtual host con el siguiente comando
+- Guardamos el archivo y `habilitaremos` el virtual host con el siguiente comando
 
 ```bash
 sudo a2ensite departamentos.centro.intranet.conf
@@ -363,7 +363,7 @@ Adding password for user Ruben
 
 ![](https://github.com/RubenEsquivelMoron/ProyectoSRI/blob/bc975ecf6434d9ac4c889ec3f51283f72c6afb6c/Capturas/Ejercicio%206/1.png)
 
-- Ahora, nos iremos al archivo de configuracion de departamentos.centro.intranet
+- Ahora, nos iremos al archivo de configuracion de `departamentos.centro.intranet`
 
 ```bash
 sudo nano /etc/apache2/sites-enabled/departamentos.centro.intranet.conf
@@ -389,7 +389,7 @@ sudo nano /etc/apache2/sites-enabled/departamentos.centro.intranet.conf
 sudo apache2ctl configtest
 ```
 
-- Por ultimo, reiniciaremos apache
+- Por ultimo, `reiniciaremos` apache
 
 ```bash
 sudo systemctl restart apache2
@@ -409,7 +409,7 @@ sudo systemctl restart apache2
 sudo apt-get install awstats
 ```
 
-- Ahora, habilitaremos el modulo cgi
+- Ahora, `habilitaremos` el modulo `cgi`
 
 ```bash
 sudo service apache2 restart
@@ -450,7 +450,7 @@ sudo cp -r /usr/lib/cgi-bin /var/www/html/departamentos.centro.intranet
 sudo chown -R www-dat www-data /var/www/html/departamentos.centro.intranet/cgi-bin/
 ```
 
-- Por ultimo, haremos un restart en el apache
+- Por ultimo, haremos un `restart` en el apache
 
 ```bash
 sudo service apache2 restart
@@ -466,7 +466,7 @@ http://192.168.73.45/cgi-bin/awstats.pl?config=departamentos.centro.intranet
 
 ## Ejercicio 8 - Instalacion de servidor Nginx
 
-- Comenzaremos actualizando los repositorios de linux e instalando Nginx
+- Comenzaremos `actualizando` los repositorios de linux e instalando Nginx
 
 ```bash
 sudo apt update
@@ -489,13 +489,13 @@ Available applications:
   OpenSSH
 ```
 
-- Seguidamente, habilitaremos el servicio de Nginx HTTP
+- Seguidamente, `habilitaremos` el servicio de Nginx HTTP
 
 ```bash
 sudo ufw allow 'Nginx HTTP'
 ```
 
-- Y ya tendremos el servidor activo, pero para poder visualizarlo correctamente, deberemos cambiar el puerto del servidor
+- Y ya tendremos el servidor activo, pero para poder visualizarlo correctamente, deberemos `cambiar el puerto del servidor`
 
 ```bash
 sudo nano /etc/nginx/sites-available/default
@@ -511,13 +511,13 @@ server {
 
 ![](https://github.com/RubenEsquivelMoron/ProyectoSRI/blob/d124e223ae3fa05864834b8d10d489b5e3c4b2e7/Capturas/Ejercicio%208/2.png)
 
-- Guardaremos el archivo y reiniciaremos el servicio de nginx
+- Guardaremos el archivo y `reiniciaremos` el servicio de nginx
 
 ```bash
 sudo service nginx restart
 ```
 
-- Y ya podremos visualizar la pagina web default de nginx
+- Y ya podremos visualizar la pagina web default de Nginx
 
 ![](https://github.com/RubenEsquivelMoron/ProyectoSRI/blob/ddbc2d4a4a61bf7b1e39930aed17e1f17a0f34bb/Capturas/Ejercicio%208/6.png)
 
