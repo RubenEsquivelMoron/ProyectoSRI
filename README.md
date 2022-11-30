@@ -506,7 +506,7 @@ sudo nano /etc/nginx/sites-available/default
 ```bash
 server {
         listen 8050 default_server;
-        listen [::]:80 default_server;}
+        listen [::]:80 default_server;
 ```
 
 ![](https://github.com/RubenEsquivelMoron/ProyectoSRI/blob/d124e223ae3fa05864834b8d10d489b5e3c4b2e7/Capturas/Ejercicio%208/2.png)
