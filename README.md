@@ -509,7 +509,7 @@ server {
         listen [::]:80 default_server;}
 ```
 
-//Imagen//
+![](https://github.com/RubenEsquivelMoron/ProyectoSRI/blob/d124e223ae3fa05864834b8d10d489b5e3c4b2e7/Capturas/Ejercicio%208/2.png)
 
 - Guardaremos el archivo y reiniciaremos el servicio de nginx
 
@@ -519,7 +519,7 @@ sudo service nginx restart
 
 - Y ya podremos visualizar la pagina web default de nginx
 
-//Imagen//
+![](https://github.com/RubenEsquivelMoron/ProyectoSRI/blob/ddbc2d4a4a61bf7b1e39930aed17e1f17a0f34bb/Capturas/Ejercicio%208/6.png)
 
 
 
