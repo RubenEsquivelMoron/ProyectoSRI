@@ -355,7 +355,7 @@ sudo apt-get install apache2-utils
 - Crearemos el usuario con el comando
 
 ```bash
-htpasswd -c /etc/apache/.htpasswd Ruben
+sudo htpasswd -c /etc/apache2/.htpasswd Ruben
 New password:
 Re-type new password:
 Adding password for user Ruben
