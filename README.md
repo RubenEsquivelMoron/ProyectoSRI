@@ -401,7 +401,7 @@ sudo systemctl restart apache2
 
 ![](https://github.com/RubenEsquivelMoron/ProyectoSRI/blob/bc975ecf6434d9ac4c889ec3f51283f72c6afb6c/Capturas/Ejercicio%206/6.png)
 
-## Ejercicio 7 - 
+## Ejercicio 7 - Instala y configura awstat.
 
 - Comenzaremos con la instalacion del servicio de AWstats
 
