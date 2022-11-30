@@ -458,5 +458,5 @@ sudo service apache2 restart
 http://192.168.73.45/cgi-bin/awstats.pl?config=departamentos.centro.intranet
 ```
 
-//Imagen//
+![](https://github.com/RubenEsquivelMoron/ProyectoSRI/blob/a72b7dab2656925709630eb3dad61fec3787a108/Capturas/Ejercicio%207/2.png)
 
