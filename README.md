@@ -431,6 +431,10 @@ SiteDomain=”departamentos.centro.intranet”
 HostAliases=”departamentos.centro.intranet localhost 127.0.0.1” 
 AllowToUpdateStatsFromBrowser=1
 ```
+![](https://github.com/RubenEsquivelMoron/ProyectoSRI/blob/6bd0c6a32cd3d8751ff213d5fb63fba1f29135ae/Capturas/Ejercicio%207/Comandos/9.png)
+![](https://github.com/RubenEsquivelMoron/ProyectoSRI/blob/6bd0c6a32cd3d8751ff213d5fb63fba1f29135ae/Capturas/Ejercicio%207/Comandos/10.png)
+![](https://github.com/RubenEsquivelMoron/ProyectoSRI/blob/6bd0c6a32cd3d8751ff213d5fb63fba1f29135ae/Capturas/Ejercicio%207/Comandos/11.png)
+![](https://github.com/RubenEsquivelMoron/ProyectoSRI/blob/6bd0c6a32cd3d8751ff213d5fb63fba1f29135ae/Capturas/Ejercicio%207/Comandos/12.png)
 
 - construiremos las estadisticas iniciales que se generan a partir de los registros del servidor
 
