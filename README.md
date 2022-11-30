@@ -400,3 +400,63 @@ sudo systemctl restart apache2
 ![](https://github.com/RubenEsquivelMoron/ProyectoSRI/blob/bc975ecf6434d9ac4c889ec3f51283f72c6afb6c/Capturas/Ejercicio%206/5.png)
 
 ![](https://github.com/RubenEsquivelMoron/ProyectoSRI/blob/bc975ecf6434d9ac4c889ec3f51283f72c6afb6c/Capturas/Ejercicio%206/6.png)
+
+## Ejercicio 7 - 
+
+- Comenzaremos con la instalacion del servicio de AWstats
+
+```bash
+sudo apt-get install awstats
+```
+
+- Ahora, habilitaremos el modulo cgi
+
+```bash
+sudo service apache2 restart
+sudo a2enmod cgi
+```
+
+- Seguidamente, configuraremos el sitio web
+
+```bash
+sudo cp /etc/awstats/awstats.conf /etc/awstats/awstats.departamentos.centro.intranet.conf
+sudo nano /etc/awstats/awstats.departamentos.centro.intranet.conf
+```
+
+- Editaremos las siguientes zonas
+
+```
+LogFile=”/var/log/apache2/access.log”
+SiteDomain=”departamentos.centro.intranet” 
+HostAliases=”departamentos.centro.intranet localhost 127.0.0.1” 
+AllowToUpdateStatsFromBrowser=1
+```
+
+- construiremos las estadisticas iniciales que se generan a partir de los registros del servidor
+
+```bash
+sudo /usr/lib/cgi-bin/awstats.pl -config=departamentos.centro.intranet -update
+```
+
+- Por ultimo, configuraremos apache para el AWStats
+
+```
+sudo cp -r /usr/lib/cgi-bin /var/www/html/departamentos.centro.intranet
+
+sudo chown -R www-dat www-data /var/www/html/departamentos.centro.intranet/cgi-bin/
+```
+
+- Por ultimo, haremos un restart en el apache
+
+```bash
+sudo service apache2 restart
+```
+
+- Ahora, para comprobar que se ha implementado el AWstat
+
+```bash
+http://192.168.73.45/cgi-bin/awstats.pl?config=departamentos.centro.intranet
+```
+
+//Imagen//
+
