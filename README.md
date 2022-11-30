@@ -361,7 +361,7 @@ Re-type new password:
 Adding password for user Ruben
 ``` 
 
-//Imagen//
+![](https://github.com/RubenEsquivelMoron/ProyectoSRI/blob/bc975ecf6434d9ac4c889ec3f51283f72c6afb6c/Capturas/Ejercicio%206/1.png)
 
 - Ahora, nos iremos al archivo de configuracion de departamentos.centro.intranet
 
@@ -381,7 +381,7 @@ sudo nano /etc/apache2/sites-enabled/departamentos.centro.intranet.conf
 ```
 - Quedará de la siguiente manera
 
-//Imagen//
+![](https://github.com/RubenEsquivelMoron/ProyectoSRI/blob/bc975ecf6434d9ac4c889ec3f51283f72c6afb6c/Capturas/Ejercicio%206/3.png)
 
 - Verificaremos la configuracion
 
@@ -395,6 +395,8 @@ sudo apache2ctl configtest
 sudo systemctl restart apache2
 ```
 
-### Comprobacion
+### Comprobaciones
 
-//Imagen//
+![](https://github.com/RubenEsquivelMoron/ProyectoSRI/blob/bc975ecf6434d9ac4c889ec3f51283f72c6afb6c/Capturas/Ejercicio%206/5.png)
+
+![](https://github.com/RubenEsquivelMoron/ProyectoSRI/blob/bc975ecf6434d9ac4c889ec3f51283f72c6afb6c/Capturas/Ejercicio%206/6.png)
