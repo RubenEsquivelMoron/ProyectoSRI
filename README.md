@@ -343,3 +343,58 @@ http://departamentos.centro.intranet
 
 ![](https://github.com/RubenEsquivelMoron/ProyectoSRI/blob/0898e23f12ca632f27cd34060cf776bba073c310/Capturas/Ejercicio%205/4.png)
 
+## Ejercicio 6 - Protección de aplicacion por autenticación
+
+- Comenzaremos actualizando el servidor e instalaremos las utilidades de apache
+
+```bash
+sudo apt-get update
+sudo apt-get install apache2-utils
+```
+
+- Crearemos el usuario con el comando
+
+```bash
+htpasswd -c /etc/apache/.htpasswd Ruben
+New password:
+Re-type new password:
+Adding password for user Ruben
+``` 
+
+//Imagen//
+
+- Ahora, nos iremos al archivo de configuracion de departamentos.centro.intranet
+
+```bash
+sudo nano /etc/apache2/sites-enabled/departamentos.centro.intranet.conf
+```
+
+- Y agregaremos los siguiente a lo que ya esta escrito
+
+```bash
+<Directory "/var/www/html/departamentos.centro.intranet">
+      AuthType Basic
+      AuthName "Restricted Content"
+      AuthUserFile /etc/apache2/.htpasswd
+      Require valid-user
+  </Directory>
+```
+- Quedará de la siguiente manera
+
+//Imagen//
+
+- Verificaremos la configuracion
+
+```bash
+sudo apache2ctl configtest
+```
+
+- Por ultimo, reiniciaremos apache
+
+```bash
+sudo systemctl restart apache2
+```
+
+### Comprobacion
+
+//Imagen//
